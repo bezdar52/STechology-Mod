@@ -1,0 +1,11 @@
+item.ingot_copper.name=Galvanized Bronze Ingot
+item.walkie_talkie.name=Walkie Talkie
+
+
+itemGroup.OresTab=Ores STM
+itemGroup.ItemsTab=Items STM
+
+
+gui.walkie.title=Radio STM-1
+gui.walkie.channel=Channel: %s
+gui.walkie.exit=Exit

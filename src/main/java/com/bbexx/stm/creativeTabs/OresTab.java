@@ -14,6 +14,6 @@ public class OresTab extends CreativeTabs {
     @Override
     @SideOnly(Side.CLIENT)
     public Item getTabIconItem() {
-        return ModItems.Ingot_GalvanizedBronze;
+        return ModItems.ingotCopper;
     }
 }

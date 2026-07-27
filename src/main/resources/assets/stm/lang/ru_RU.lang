@@ -1,6 +1,11 @@
-item.ItemIngotGalvanizedBronze.name=Слиток оцинкованной бронзы
-item.WalkieTalkie.name=Рация
+item.ingot_copper.name=Слиток оцинкованной бронзы
+item.walkie_talkie.name=Рация
 
 
 itemGroup.OresTab=Руды STM
 itemGroup.ItemsTab=Предметы STM
+
+
+gui.walkie.title=Рация STM-1
+gui.walkie.channel=Канал: %s
+gui.walkie.exit=Выход

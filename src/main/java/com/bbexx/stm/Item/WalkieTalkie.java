@@ -12,9 +12,12 @@ public class WalkieTalkie extends Item {
 
     public WalkieTalkie() {
         super();
-        this.setUnlocalizedName("WalkieTalkie");
+        this.setUnlocalizedName("walkie_talkie");
         this.setTextureName("stm:walkie_talkie");
         this.setCreativeTab(ModTabs.tabItems);
+
+        // Max 1 items in stack
+        this.setMaxStackSize(1);
     }
 
     @Override
