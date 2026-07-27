@@ -11,6 +11,7 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 public class ModItems {
     public static Item ingotCopper;
     public static Item Walkie_Talkie;
+    public static Item Battery;
 
     public static void init() {
         ingotCopper = new ingotCopper();
@@ -20,6 +21,9 @@ public class ModItems {
 
         Walkie_Talkie = new WalkieTalkie();
         GameRegistry.registerItem(Walkie_Talkie, "walkie_talkie");
+
+        Battery = new Battery();
+        GameRegistry.registerItem(Battery, "battery");
 
         // Crafts
         GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(Walkie_Talkie), new Object[]{

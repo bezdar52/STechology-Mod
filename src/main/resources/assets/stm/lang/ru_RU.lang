@@ -1,5 +1,6 @@
 item.ingot_copper.name=Слиток оцинкованной бронзы
 item.walkie_talkie.name=Рация
+item.battery.name=Батарея
 
 
 itemGroup.OresTab=Руды STM

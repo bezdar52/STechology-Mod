@@ -1,8 +1,7 @@
 package com.bbexx.stm.Item;
 
-import com.bbexx.stm.GUI.WalkieGUI;
+import com.bbexx.stm.StmMod;
 import com.bbexx.stm.creativeTabs.ModTabs;
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
@@ -22,9 +21,14 @@ public class WalkieTalkie extends Item {
 
     @Override
     public ItemStack onItemRightClick(ItemStack itemStack, World world, EntityPlayer player) {
-        if (world.isRemote) {
-            Minecraft.getMinecraft().displayGuiScreen(new WalkieGUI());
-        }
+        // openGui запускается И на клиенте, И на сервере автоматически
+        // Передаем: (Экземпляр мода, ID интерфейса, мир, координаты игрока)
+//        if (player.isSneaking()) {
+//            player.openGui(StmMod.instance, 1, world, (int)player.posX, (int)player.posY, (int)player.posZ);
+//        } else {
+//            player.openGui(StmMod.instance, 0, world, (int)player.posX, (int)player.posY, (int)player.posZ);
+//        }
+        player.openGui(StmMod.instance, 0, world, (int)player.posX, (int)player.posY, (int)player.posZ);
         return itemStack;
     }
 }

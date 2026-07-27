@@ -1,4 +1,4 @@
-package com.bbexx.stm.GUI;
+package com.bbexx.stm.GUI.WalkieTalkie;
 
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;

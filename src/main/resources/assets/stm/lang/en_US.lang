@@ -1,5 +1,6 @@
 item.ingot_copper.name=Galvanized Bronze Ingot
 item.walkie_talkie.name=Walkie Talkie
+item.battery.name=Battery
 
 
 itemGroup.OresTab=Ores STM
