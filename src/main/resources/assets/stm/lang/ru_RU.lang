@@ -1,2 +1,6 @@
 item.ItemIngotGalvanizedBronze.name=Слиток оцинкованной бронзы
+item.WalkieTalkie.name=Рация
+
+
 itemGroup.OresTab=Руды STM
+itemGroup.ItemsTab=Предметы STM
