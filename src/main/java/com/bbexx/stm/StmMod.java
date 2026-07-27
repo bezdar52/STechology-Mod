@@ -1,6 +1,7 @@
 package com.bbexx.stm;
 
 import com.bbexx.stm.Item.ModItems;
+import com.bbexx.stm.creativeTabs.ModTabs;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -25,6 +26,10 @@ public class StmMod {
     // GameRegistry." (Remove if not needed)
     public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
+        // Креативные вкладки
+        ModTabs.init();
+
+        // Предметы
         ModItems.init();
     }
 
