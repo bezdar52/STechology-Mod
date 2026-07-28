@@ -10,3 +10,6 @@ itemGroup.ItemsTab=Items STM
 gui.walkie.title=Radio STM-1
 gui.walkie.channel=Channel: %s
 gui.walkie.exit=Exit
+
+
+entity.stm.JackNPC.name=Jack

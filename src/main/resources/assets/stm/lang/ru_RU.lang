@@ -10,3 +10,6 @@ itemGroup.ItemsTab=Предметы STM
 gui.walkie.title=Рация STM-1
 gui.walkie.channel=Канал: %s
 gui.walkie.exit=Выход
+
+
+entity.stm.JackNPC.name=Джек
