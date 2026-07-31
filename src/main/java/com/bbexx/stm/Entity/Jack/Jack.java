@@ -1,5 +1,6 @@
 package com.bbexx.stm.Entity.Jack;
 
+import com.bbexx.stm.StmMod;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAILookIdle;
@@ -27,18 +28,24 @@ public class Jack extends EntityCreature {
     protected void applyEntityAttributes() {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(20.0D);
-        // Ставим скорость на 0, чтобы он гарантированно не сдвинулся, если его кто-то ударит
         this.getEntityAttribute(SharedMonsterAttributes.movementSpeed).setBaseValue(0.0D);
     }
 
     @Override
     public boolean canBePushed() {
-        return false; // Игроки и другие мобы не смогут его толкнуть
+        return false;
     }
 
     @Override
     public boolean attackEntityFrom(DamageSource source, float amount) {
-        // Если хотите, чтобы Джек был бессмертным НПС, раскомментируйте строку ниже:
          return false;
+    }
+
+    @Override
+    public boolean interact(EntityPlayer player) {
+        if (this.worldObj.isRemote) {
+            player.openGui(StmMod.instance, 1, this.worldObj, (int)this.posX, (int)this.posY, (int)this.posZ);
+        }
+        return true;
     }
 }

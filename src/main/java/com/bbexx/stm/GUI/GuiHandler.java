@@ -1,5 +1,6 @@
 package com.bbexx.stm.GUI;
 
+import com.bbexx.stm.GUI.JackGUI.JackGUI;
 import com.bbexx.stm.GUI.WalkieTalkie.WalkieGUI;
 import cpw.mods.fml.common.network.IGuiHandler;
 import net.minecraft.entity.player.EntityPlayer;
@@ -19,6 +20,9 @@ public class GuiHandler implements IGuiHandler {
     public Object getClientGuiElement(int ID, EntityPlayer player, World world, int x, int y, int z) {
         if (ID == 0) {
             return new WalkieGUI(); // Откроется при обычном ПКМ
+        }
+        if (ID == 1) {
+            return new JackGUI("Диалог с Джеком", "Вы готовы начать квест?");
         }
         return null;
     }
